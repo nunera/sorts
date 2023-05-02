@@ -19,7 +19,9 @@ def sortList(LIST):
 def sortList(LIST):
   for h in range(len(LIST)):
      for z in range(h+1,len(LIST)):
-         temp = LIST[z]
-         LIST[z] = LIST[h]
-         LIST[h] = temp
+        # Change this line to whatever parameter you want to be sorted (length, alphabetical, etc.)
+        if len(LIST[z]) > len(LIST[h]):
+           temp = LIST[z]
+           LIST[z] = LIST[h]
+           LIST[h] = temp
 ```
