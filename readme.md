@@ -1,4 +1,6 @@
 # Sort thingy
+
+## Insertion (reverse) 
 ```py
 def sortList(LIST):
   for h in range(1,len(LIST)):
@@ -11,4 +13,11 @@ def sortList(LIST):
               LIST[h] = temp
               h = z
           z -= 1 
+```
+## Bubble (forward)
+```py
+def sortList(LIST):
+  for h in range(len(LIST)):
+     for z in range(h+1,len(LIST)):
+         print(LIST[z],LIST[h])
 ```
