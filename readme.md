@@ -19,5 +19,7 @@ def sortList(LIST):
 def sortList(LIST):
   for h in range(len(LIST)):
      for z in range(h+1,len(LIST)):
-         print(LIST[z],LIST[h])
+         temp = LIST[z]
+         LIST[z] = LIST[h]
+         LIST[h] = temp
 ```
